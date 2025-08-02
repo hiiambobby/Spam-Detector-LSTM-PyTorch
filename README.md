@@ -23,5 +23,4 @@ The dataset used is [SMS Spam Collection](https://raw.githubusercontent.com/just
 
 ---
 
-git clone https://github.com/your-username/spam-classifier.git
-cd spam-classifier
+
