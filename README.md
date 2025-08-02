@@ -1,48 +1,27 @@
-📦 SMS Spam Classifier (PyTorch)
-A simple SMS spam detection model built using PyTorch and an LSTM neural network. The model classifies text messages as either ham (not spam) or spam based on their content.
+# 📦 SMS Spam Classifier (PyTorch)
 
-🧠 Features
-Uses an LSTM model to process message sequences
+A simple SMS spam detection model built using PyTorch and an LSTM neural network. The model classifies text messages as either **ham** (not spam) or **spam** based on their content.
 
-Custom PyTorch Dataset and DataLoader
+---
 
-Handles imbalanced data using class weights or sampling
+## 🧠 Features
 
-Saves and resumes training from checkpoints
+- LSTM-based text classifier
+- Custom PyTorch `Dataset` and `DataLoader`
+- Handles imbalanced datasets (class weights or sampling)
+- Supports checkpoint saving and resuming
+- Predicts new user input messages
 
-Supports prediction on new messages
+---
 
-📁 Dataset
-The dataset used is SMS Spam Collection, with two columns:
+## 📁 Dataset
 
-label: ham or spam
+The dataset used is [SMS Spam Collection](https://raw.githubusercontent.com/justmarkham/pycon-2016-tutorial/master/data/sms.tsv), with two columns:
 
-message: the text message
+- `label`: `ham` or `spam`
+- `message`: the actual SMS text
 
-🚀 Quick Start
-Clone the repo
+---
 
-bash
-Copy
-Edit
 git clone https://github.com/your-username/spam-classifier.git
 cd spam-classifier
-Install dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run training
-
-bash
-Copy
-Edit
-python train.py
-Predict new messages
-
-python
-Copy
-Edit
-predict_message("Free money now!", model, vocab, max_len)
-# Output: SPAM
